@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Poonam Dhingra's Homeo Clinic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f7f7f7;
+            color: #222;
+        }
+        header {
+            background: #2e8b57;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        nav {
+            background: #206040;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #2e8b57;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            flex: 1 1 250px;
+            background: #f0f8ff;
+            padding: 18px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(46,139,87,0.07);
+        }
+        footer {
+            background: #2e8b57;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 15px; }
+            .services { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dr. Poonam Dhingra's Homeo Clinic</h1>
+        <p>Holistic Homeopathic Care for You &amp; Your Family</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Dr. Poonam Dhingra</h2>
+            <p>
+                Dr. Poonam Dhingra is a dedicated and experienced homeopathic physician, committed to providing gentle, effective, and holistic healing. With a patient-centric approach, she addresses the root cause of ailments and offers personalized treatment plans for all age groups.
+            </p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Chronic Disease Management</h3>
+                    <p>Comprehensive care for chronic conditions such as allergies, asthma, arthritis, skin disorders, and more.</p>
+                </div>
+                <div class="service">
+                    <h3>Acute Illness Treatment</h3>
+                    <p>Safe and effective remedies for colds, fevers, infections, and other acute health issues.</p>
+                </div>
+                <div class="service">
+                    <h3>Child &amp; Women’s Health</h3>
+                    <p>Specialized care for children and women, including hormonal imbalances, menstrual disorders, and pediatric concerns.</p>
+                </div>
+                <div class="service">
+                    <h3>Stress &amp; Lifestyle Disorders</h3>
+                    <p>Holistic management of stress, anxiety, insomnia, and lifestyle-related health problems.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact &amp; Appointment</h2>
+            <p>
+                <strong>Address:</strong> Homeo Clinic, [Your Address Here]<br>
+                <strong>Phone:</strong> +91-XXXXXXXXXX<br>
+                <strong>Email:</strong> dr.poonamdhingra@email.com
+            </p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Dr. Poonam Dhingra's Homeo Clinic. All rights reserved.
+    </footer>
+</body>
+</html>
